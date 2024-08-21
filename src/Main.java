@@ -6,10 +6,14 @@ public class Main {
         //Напишите программу, которая решит эту задачу, и выведите в консоль результат в формате: «Сумма трат за месяц составила … рублей».
         int[] payments = {1000, 2000, 3500, 4000, 5000};
         int sum = 0;
-        for (int month = 0; month < payments.length; month++) {
-            sum += payments[month];
-            System.out.println("Сумма трат за месяц составила " + sum + " рублей");
+        for (int index = 0; index < payments.length; index++) {
+            sum = sum + payments[index];
         }
-
+        System.out.println("Сумма трат за месяц составила " + sum + " рублей");
     }
+
+
 }
+
+
+
