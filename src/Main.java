@@ -1,5 +1,15 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        System.out.println("Задача 1");
+        //Бухгалтеры попросили посчитать сумму всех выплат за месяц.
+        //Создайте массив с пятью целочисленными элементами и задайте каждому элементу значение.
+        //Напишите программу, которая решит эту задачу, и выведите в консоль результат в формате: «Сумма трат за месяц составила … рублей».
+        int[] payments = {1000, 2000, 3500, 4000, 5000};
+        int sum = 0;
+        for (int month = 0; month < payments.length; month++) {
+            sum += payments[month];
+            System.out.println("Сумма трат за месяц составила " + sum + " рублей");
+        }
+
     }
 }
