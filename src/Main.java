@@ -10,10 +10,31 @@ public class Main {
             sum = sum + payments[index];
         }
         System.out.println("Сумма трат за месяц составила " + sum + " рублей");
+
+
+        System.out.println("Задача 2");
+        //Также бухгалтерия попросила найти минимальную и максимальную траты за неделю.
+        int[] pay = {2500, 3000, 1000, 3300, 1111};
+        int maxPay = -1;
+        for (final int current : pay) {
+            if (current > maxPay) {
+                maxPay = current;
+            }
+        }
+        int minPay = 90_000;
+        for (final int current : pay) {
+            if (current < minPay) {
+                minPay = current;
+            }
+        }
+        System.out.println("Минимальная сумма трат за неделю составила " + minPay + " рублей. Максимальная сумма трат за неделю составила " + maxPay + " рублей");
     }
 
 
 }
+
+
+
 
 
 
