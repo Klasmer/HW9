@@ -38,6 +38,13 @@ public class Main {
         }
         sum1 = sum1 / cash.length;
         System.out.println("Средняя сумма трат за месяц составила " + sum1 + " рубля");
+
+        System.out.println("Задача 4");
+        //Напишите код, который развернет содержимое массива, а затем распечатает его содержимое.
+        char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i = reverseFullName.length-1; i >=0 ; i--) {
+            System.out.print(reverseFullName[i]);
+        }
     }
 }
 
